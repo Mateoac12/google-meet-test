@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Meet Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Google Meet Test</h1>
+    <form id="form">
+      <label for="username">Escribe el nombre de usuario</label>
+      <input
+        id="username"
+        type="text"
+        name="username"
+        placeholder="Nombre de usuario"
+      />
+      <button id="join">Entrar</button>
+    </form>
+    <p id="user-count"></p>
+    <div id="video-panel">
+      <div id="local" class="participant">
+        <div id="local-video"></div>
+        <span>Yo</span>
+      </div>
+    </div>
+
+    <script src="//sdk.twilio.com/js/video/releases/2.17.1/twilio-video.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
